@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+ <html lang="en">
+  <head>
+   <title>GitHub Login Test</title>
+   <style>
+       body {
+           text-align: center;
+           justify-content: center;
+           align-items: center;
+       }
+   </style>
+  </head>
+  <body>
+    <p>Hi <b><%= req.user.displayName %></b>, your email is <b><%= req.user.email %></b>. Your photo <a href="<%= req.user._json["avatar_url"] %>url</a>"></a> </p>
+  </body>
+</html>
